@@ -1,13 +1,16 @@
 const imageId = document.getElementById('imageId');
 const btn1 = document.getElementById('btn1')
+const person = document.getElementById('person')
 // const btn2 = document.getElementById('btn2')
 // var imageId = default.src = "on.png";
 
 let isOn = true;
 
+
 btn1.addEventListener("click", function() {
   if(isOn) {
     imageId.src = "images/off.png";
+    person.remove();
     this.textContent = "Off";
     document.body.style.backgroundColor = "#808080";
     document.body.style.color = "#ffff";
